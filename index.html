@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Info</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-default mt-2">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand text-white">
+                    <h3>MovieInfo</h3>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- search -->
+    <div class="container">
+        <div class="jumbotron">
+            <h3 class="text-center">Search For Any Movie</h3>
+            <form id="searchForm">
+                <input type="text" id="searchText" class="form-control" placeholder="Search Movie.....">
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="movies" class="row"></div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
